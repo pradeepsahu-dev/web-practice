@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Landing / Login Page -->
+    <div id="login-page" class="page">
+      <h1 class="title">✨ Test Quiz ✨</h1>
+      <div class="card fade-in">
+        <h2>Welcome!</h2>
+        <p>Enter your name to begin</p>
+        <input type="text" id="username" placeholder="Your Name">
+        <button onclick="startLogin()">Start</button>
+      </div>
+    </div>
+
+    <!-- Difficulty Selection with File Upload -->
+    <div id="difficulty-page" class="page hidden fade-in">
+      <h2 class="title">Choose Difficulty</h2>
+      
+      <!-- File Upload Input -->
+      <input type="file" id="fileInput" accept=".json"><br><br>
+
+      <div class="btn-group">
+        <button onclick="startQuiz('Easy')">Easy</button>
+        <button onclick="startQuiz('Medium')">Medium</button>
+        <button onclick="startQuiz('Hard')">Hard</button>
+      </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page hidden fade-in">
+      <h2 id="welcome"></h2>
+      <div class="card">
+        <p id="question" class="question"></p>
+        <div id="options"></div>
+        <p id="answer" class="hidden answer"></p>
+      </div>
+      <div class="btn-group">
+        <button onclick="showAnswer()">Show Answer</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    </div>
+
+    <!-- Result Page -->
+    <div id="result-page" class="page hidden fade-in">
+      <h2>🎉 Quiz Finished 🎉</h2>
+      <p id="final-score"></p>
+      <button onclick="restart()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

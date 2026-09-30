@@ -1,0 +1,58 @@
+/* div{
+    height: 150px;
+    width: 300px;
+    background-color: gray;
+    border:5px dotted black;
+    margin-top:20px;
+    margin-right:1em;
+    margin-bottom:40px;
+    margin-left:2em;
+    padding:1em;
+}
+#kal{
+    height: 100px;
+    width: 100px;
+    border:2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: pink;
+
+
+}
+li{
+    display: inline;
+
+
+} */
+ 
+.card{
+    width: 250px;
+    height: 400px;
+    border:2px solid black;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 20px black;
+    transition: 2s;
+    
+
+
+}
+.man{
+    margin: 28px;
+}
+.desc{
+    padding: 0 2px 0 2px;
+}
+.card:hover{
+    box-shadow: 4px 8px 80px rgb(11, 57, 206) ;
+    transform: translate(250px, 400px);
+    
+}
+#container{
+     
+    justify-content: center;
+    gap: 50px;
+}
+

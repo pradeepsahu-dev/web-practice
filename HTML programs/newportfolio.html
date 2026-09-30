@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradeep Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #eceaea;
+      transition: background 0.5s, color 0.5s;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      border-bottom: 1px solid #424040;
+    }
+    h1 {
+      font-size: 2.8rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffffaa;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffff88; }
+      to { text-shadow: 0 0 20px #00ffffcc; }
+    }
+    img {
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      width: 120px;
+      height: 120px;
+      box-shadow: 0 0 15px #00ffff66;
+      margin-top: 10px;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid transparent;
+      border-image: linear-gradient(45deg, #00ffff, #ffcc00);
+      border-image-slice: 1;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ffffff10;
+    }
+    h2 {
+      color: #ffcc00;
+      border-bottom: 1px dashed #555;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .skills li {
+      margin: 10px 0;
+    }
+    .bar {
+      background: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+    .bar-fill {
+      height: 12px;
+      background: linear-gradient(to right, #00ffff, #00ff99);
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-shadow: 0 0 10px #00ffff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #444;
+      font-size: 0.9rem;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #00ffff;
+      border: none;
+      color: #000;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00ffff88;
+    }
+    .light {
+      background: #f1f1f1;
+      color: #111;
+    }
+    .light section {
+      background: #fff;
+    }
+    .light a {
+      color: #0077b5;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
+  <div class="container">
+    <header>
+      <h1>Pradeep Sahu</h1>
+      <p>I love to learn new ideas</p>
+      <img src="pradeep2.jpg" alt="pradeep" />
+    </header>
+    <section>
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><b>Class 10</b> (MP Board): 72.3%</li>
+        <li><b>Class 12</b> (MP Board): 73.4%</li>
+        <li><b>B.Tech</b> (SRIT Jabalpur): 7.92 CGPA</li>
+      </ul>
+    </section>
+    <section class="skills">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript
+          <div class="bar"><div class="bar-fill" style="width: 85%"></div></div>
+        </li>
+        <li>Node.js, SQL
+          <div class="bar"><div class="bar-fill" style="width: 60%"></div></div>
+        </li>
+        <li>C++, Java
+          <div class="bar"><div class="bar-fill" style="width: 70%"></div></div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>📁 Projects</h2>
+      <ul>
+        <li><b>Background Remover Tool</b> – Made with HTML, CSS & JavaScript</li>
+        <li><b>Simple Portfolio Website</b> – Personal web profile using basic web tech</li>
+        <li><b>To-Do List App</b> – JavaScript based interactive task manager</li>
+      </ul>
+    </section>
+    <section>
+      <h2>🎯 Hobbies</h2>
+      <ul>
+        <li>Debating</li>
+        <li>Reading Books</li>
+        <li>Gaming</li>
+      </ul>
+    </section>
+    <section>
+      <h2>📄 Resume</h2>
+      <p><a href="#" download>Download My Resume (Coming Soon)</a></p>
+    </section>
+    <footer>
+      <h2>📬 Contact Me</h2>
+      <ul>
+        <li><b>Email:</b> pradeepshah64808@gmail.com</li>
+        <li><a href="linkedin.com/in/pradeep-sahu-a3b2b3265">LinkedIn</a></li>
+      </ul>
+      <p>Made with ❤️ by Apna College Fan</p>
+    </footer>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+  </script>
+</body>
+</html>

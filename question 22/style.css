@@ -1,0 +1,124 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Titles */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 40px #ff6ec7;
+  animation: glow 2s infinite alternate;
+}
+
+/* Cards */
+.card {
+  background: rgba(231, 154, 154, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 80%;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  margin: 10px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff6ec7, #ffd700);
+  color: #222;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fff;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Questions */
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#options button {
+  width: 100%;
+  margin: 8px 0;
+  background: linear-gradient(135deg, #42a5f5, #478ed1);
+  color: white;
+}
+
+.correct {
+  background: #4caf50 !important;
+}
+
+.wrong {
+  background: #5ff436 !important;
+}
+
+.answer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00eeff;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff, 0 0 20px #978a3f; }
+  to { text-shadow: 0 0 20px #95907e, 0 0 40px #001580; }
+}
+#fileInput{
+  color: #764ba2;
+  background-color: #978a3f;
+  transform: scaleX(0.8);
+}
+#fileInput:hover{
+  border-radius: 30%;
+  background-color: #00eeff;
+  transform: translate(20px, 2px);
+}

@@ -1,0 +1,24 @@
+/* *{
+    background: pink;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+} */
+
+/* p{
+    background-color: black;
+    color:pink;
+    text-align: start;
+    line-height: px;
+    letter-spacing: 3px;
+
+} */
+div:hover{
+    color: green;
+    background-color: pink;
+
+}
+button:active{
+    color: brown;
+    background: teal;
+}
+

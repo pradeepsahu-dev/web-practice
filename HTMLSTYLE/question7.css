@@ -1,0 +1,89 @@
+/* this is First Question.
+
+/* .container{
+    height: 400px;
+    width: 400px;
+    font-size: 50px;
+    border: 5px solid aquamarine;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content:space-around ;
+    
+}
+.child{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10%;
+    font-size: 50px;
+    align-content: space-around;
+    background-color: rgb(92, 89, 89);
+    text-align: center;
+    margin-top: 12px;
+    color: brown;
+   
+}
+#a:hover,#b:hover,#c:hover,#d:hover,#e:hover,#f:hover,#g:hover,#h:hover,#i:hover{
+    border-radius: 50%;
+    transition-duration: 2s;
+    background-color: blueviolet;
+    box-shadow: 5px 5px 10px 20px rgb(222, 163, 222);
+    transform: translate(20px, 30px);
+    transition: all 0.3s ease;
+  
+
+    
+} */
+
+/* Question no 02
+ */
+
+ #navbar{
+    height: 50px;
+    width: 900px;
+    border:2px solid lightgreen;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgb(228, 141, 141);
+    
+
+ }
+ .option{
+    height: 35px;
+    width: 70px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 3px solid black;
+    margin:10px ;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(245, 179, 80); 
+     
+ }
+ .option:hover{
+    background-color: blueviolet;
+    transform:scale(0.8,0.7) ;
+    transition:  1s ease-in-out 3;
+    transform: skew(-20deg);
+
+ }
+
+ .option:active{
+    background-color: rgb(20, 80, 220);
+    
+ }
+
+ .option::selection{
+    background-color: chartreuse;
+ }
+ .option:active{
+    border-radius: 50%;
+ }

@@ -1,0 +1,42 @@
+
+    /* background-color: yellow;
+    border:2px solid black;
+} */
+@media (width:200px) {
+    h1{
+        background-color: red;color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+    
+} 
+@media (min-width:500px) {
+   h1{
+    background-color: rgb(255, 255, 0);
+    color: chocolate;
+   }
+    
+}
+@media (max-width:499px){
+    h1{
+        background-color: rgb(225, 8, 8);
+        color: white;
+        text-align:6px;
+    }
+}
+@media (min-width:600px) and (max-width:800px){
+   h1{
+    background-color: darkgreen;
+    color: black;
+   }
+
+}
+@media (orientation: landscape){
+    h1{
+        background-color: cyan;
+        color: blueviolet;
+    }
+}

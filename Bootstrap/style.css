@@ -1,0 +1,10 @@
+.container2{
+    display: flex;
+    gap: 200px;
+}
+#card1{
+     width: 18rem;
+}
+#card2{
+    width: 18rem;
+}

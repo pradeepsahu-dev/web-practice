@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/0levelpract.html">
+        <div>
+       <label for="username">Username:</label>
+       <input type="text" id="username" placeholder="enter usernme" name="user">
+        </div>
+       <div>
+        <label for="pass">Password:</label>
+       <input type="password" id="pass" placeholder="enter password" name="pass">
+       </div>
+       <div>
+        <label for="age"> Enter Age:</label>
+        <input type="number" id="age" placeholder="Age" name="aage">
+       </div>
+       <div>
+        <label for="check"> I am 18+</label>
+        <input type="checkbox" id="check" name="age" checked>
+       </div>
+       
+       <div>
+       <label for="mango">mango</label>
+        <input type="radio" name="fruit" id="mango" value="mango">
+        <label for="banaan" >banana</label>
+        <input type="radio" name="fruit" id="banaan" value="banana">
+        <label for="Apple">Apple</label>
+        <input type="radio" name="fruit" id="Apple" value="apple">
+       </div>
+        <div>
+            choose your profession:
+            <select name="profession" id="profession">
+                <option>Select your option</option>
+              <option value="stu">Student</option>
+                <option value="dev" selected>Devloper</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+        </div>
+        <div>
+            <label for="volume">Volume</label>
+            <input type="range" min="0" max="500" id="volume" step="20" value="4000" name="vol">
+        </div>
+        <br>
+        <label for="feed">Give your feedback</label>
+        <textarea id="feed" name="feedb" rows="2" cols="20" placeholder="write your feedback here"></textarea>
+       <div>
+        <button>submit</button>
+       </div>
+</form>
+
+      <table border="1">
+        <caption><h2>Student information</h2></caption>
+        <thead>
+            <tr>
+               <th rowspan="6">Info</th>
+               <th rowspan="2" >Name</th>
+               <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>city</th>
+                <th>house</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+             <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+             <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+             <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+             
+        </thead>
+       </table>
+<hr>
+       <form action="/forms.html">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user">
+        </div>
+        
+        <div>
+            Sex:
+             <input type="radio" id="male" value="m" name="gender">
+             <label for="male">Male</label>
+             <input type="radio" name="gender" id="female" value="f">
+             <label for="female">Female</label>
+        </div> 
+        <div>
+            Country:
+            <select name="country" id="whare">
+                <option value="inr">India</option>
+                <option value="usa">America</option>
+                <option value="sko">South Korea</option>
+                <option value="london">London</option>
+            </select>
+        </div>
+        Message:
+        <div>
+            <label for="feedback"></label>
+            <textarea id="feedback" name="myfeed" rows="3" cols="15" placeholder="write here"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="click">
+            <label for="click">Subscribe?</label>
+        </div>
+        <button type="submit">Submit</button>
+       </form>
+
+       <hr/>
+       <h2>Feedback Form</h2>
+
+
+       <form action="/newportfolio.html">
+        <div>
+            <label for="user">Name:</label>
+            <input type="text" id="user" name="user" placeholder="Write your name">
+        </div>
+        <div>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="email" placeholder="Write your email">
+        </div>
+        Message:
+        <div>
+            <label for="myfeeed"></label>
+            <textarea id="myfeeed" name="feeed" rows="3" cols="20" placeholder="write here"></textarea>
+        </div>
+        <div>
+            Rate us our of 5:<br>
+           <input type="radio" name="rate" id="first">
+           <label for="first">1</label><br>
+           <input type="radio" name="rate" id="2">
+           <label for="2">2</label><br>
+           <input type="radio" name="rate" id="3">
+           <label for="3">3</label><br>
+           <input type="radio" name="rate" id="4">
+           <label for="4">4</label><br>
+           <input type="radio" name="rate" id="5">
+           <label for="5">5</label>
+        </div>
+         
+        <button>send your message!</button>
+        
+       </form>
+</body>
+</html>

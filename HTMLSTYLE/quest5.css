@@ -1,0 +1,19 @@
+*{
+    font-family: 'Courier New';
+}
+h1{
+    color: #1b74e4;
+}
+.submit{
+    background-color: black;
+    color: white;
+}
+#login{
+    background-color: aqua;
+}
+#register{
+    background-color: aqua;
+}
+p,a{
+    background-color: rgb(215, 70, 8);
+}

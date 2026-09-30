@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>submit</button>
+     <form action="/server">
+
+        <!--for using placeholder show data in the tec=xt area-->
+
+        <input type="text" placeholder="enter username">
+        <br/>
+        <input type="password" placeholder="enter your password">
+        <br/>
+
+        <label>
+            Enter your username:
+            <input type="text" placeholder="username">
+        </label>
+
+        <!--for using label to click the text so you can enter in box automaticalli
+        and label ke for or input ke id ka data same hona chahiye-->
+
+        <br/>
+        <label for="pradeep"> Enter your username</label> 
+        <input type="text" id="pradeep" placeholder="username">
+        <br/>
+        <button>submit</button>
+
+<!--right way for writing code-->
+
+     </form>   
+     
+     <form action="/provider">
+        <div>
+            <label for="username">Enter Your username</label>
+            <input type="text" placeholder="enter username" id="username">
+        </div>
+        <div>
+            <label for="passgord" >Enter your password</label>
+            <input type="password" id="passgord" placeholder="Enter password">
+        </div>
+        <div>
+            <label for="Age">Enter your age</label>
+            <input type="number" id="Age" placeholder="enter age">
+        </div>
+        <button type="submit">submit</button>
+        <button type="menu">click</button>
+        <button type="reset">reset</button>
+        <button>hello</button>
+        <button type="button">pradeep</button>
+        <br/>
+        <!--writing second way for label-->
+        <label>
+            enter your name
+            <input type="text" placeholder="do something">
+        </label>
+     </form>
+</body>
+</html>

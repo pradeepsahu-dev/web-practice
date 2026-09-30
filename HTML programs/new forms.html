@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    /* General Page Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  margin: 0;
+  padding: 40px;
+}s
+
+/* Center the form */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(222, 215, 212, 0.865);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Inputs, selects, and text fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 10px #6c63ff66;
+  outline: none;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* Radio buttons */
+input[type="radio"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* Submit Button */
+button,
+input[type="submit"] {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6c63ff, #3b3b98);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #3b3b98, #6c63ff);
+  box-shadow: 0 0 15px #6c63ff99;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terms section styling */
+.terms {
+  margin-top: 20px;
+}
+
+/* Error Fix for UNKNOWN_TYPE */
+input[type="UNKNOWN_TYPE"] {
+  display: none;
+}
+
+/* Highlight required fields */
+label::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+  </style>
+</head>
+<html>
+    <body>
+        <h1>* Travel Reservation Form</h1> 
+      <h2>* denote mandotory</h2>
+
+         <form action="/portfoliopage.html">
+          <div>
+            <label for="username">Full name*:</label><br/>
+            <input type="text" id="username" placeholder="FirstName LastName" name="fl">
+          </div>
+          <div>
+            <label for="email">Email Address*:</label><br/>
+            <input type="email" id="email" placeholder="EMAIL_ADDRESS" name="em">
+          </div>
+          <div>
+            <br />
+            Select tour package*:
+            <br/>
+            <select name="where tour"><br/>
+               <option value="agra">Agara</option>
+
+               <option value="nd">New delhi</option>
+               <option value="kdn">Kedarnath</option>
+               <option value="bhopal">Bhopal</option>
+
+               <option value="mewad">Mewad</option>
+               <option value="Singrauli">Singrauli</option>
+               <option value="sidhi">Sidhi***</option>
+               <option value="dhawai">Dhawai</option>
+
+                 <option value="ujjain">Ujain</option>
+            </select>
+          </div>
+          <div><br>
+             <label for="date">Arrival date*:</label><br/>
+            <input type="date" id="date" placeholder="m/d/y" name="date">
+          </div>
+           <div>
+            Number of Persons*:
+            <br/>
+             <label for="Number"></label><br/>
+            <input type="number" id="Number" placeholder="UNKNOWN_TYPE" name="no">
+          </div>
+          <div>
+            <br/>
+            What would you want to avail?*<br/>
+            <label for="boarding">Boarding</label>
+            <input  type="radio" id="boarding" name="want"/><br/>
+
+            <label for="fooding">Fooding</label>
+            <input type="radio" id="fooding" name="want"/><br/>
+
+            <label for="ss">Sight Seeing</label>
+            <input type="radio" id="ss" name="want"/> <br/>   
+          </div>
+          <div>
+            Discout Coupon Code:<br/>
+            <br/>
+            <label for="code"></label>
+            <input type="number" id="code" placeholder="UNKNOWN_TYPE" name="C_CODE"/>
+          </div>
+          <div>
+            Terms and Conditions*<br/>
+            <input type="radio" id="agree" name="y/n" value="yes"/>
+            <label for="agree">I agree</label>
+            <input type="radio" id="n.agree" name="y/n" value="no"/>   
+            <label for="n.agree">I disagree</label>
+          </div><br/>
+          <button>complate Reservation</button>
+         </form>
+    </body>
+</html>
+</html>

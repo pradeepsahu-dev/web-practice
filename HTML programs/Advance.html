@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #534956, #95a9e1fa, #644f46);
+      color: #f1f1f1;
+      transition: background 0.5s, color 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Adanvanced HTML tag etc-->
+
+    <!--marque tag-->
+    
+    <marquee scrollamount="30" direction="right" height="500px" behavior="loop" onmouseover="stop();" onmouseout="start();">
+        <img src="pradeep2.jpg" height="150px" width="100px" alt="pradeep bro">
+    </marquee>
+
+    <marquee scrollamount="30" direction="right" height="500px" behavior="loop" onmouseover="stop();" onmouseout="start();">
+        <img src="pradeep2.jpg" height="150px" width="100px" alt="pradeep bro">
+    </marquee>
+
+
+    <form action="/Advance.html">
+        <h1>My Feedback Form:--</h1>
+        <div>
+            <label for="username"><ul><li>Name:</li></ul></label>
+            <input type="text" id="username" placeholder="enter username" name="user">
+        </div>
+        <div>
+            <label for="emailid"><ul><li>Email:</li></ul></label>
+            <input type="email" id="emailid" placeholder="enter email" name="email">
+        </div>
+        <div>
+            <label for="password"><ul><li>Password:</li></ul></label>
+            <input type="password" id="password" placeholder="enter password" name="pass">
+        </div>
+        <div>
+            <ul>
+                <li>Please check all the emotions that apply to you:</li>
+            </ul>
+            <ul>
+                <li> <input type="radio" id="angry" name="emotion" value="Angry" >
+                <label for="angry">Angry</label></li>
+                <li> <input type="radio" id="sad" name="emotion" value="sad" >
+                <label for="sad">Sad</label></li>
+                <li> <input type="radio" id="happy" name="emotion" value="happy" >
+                <label for="happy">Happy</label></li>
+                <li> <input type="radio" id="ambivalent" name="emotion" value="ambivalent" >
+                <label for="ambivalent">Ambivalent</label></li>
+            </ul>
+           
+        </div>
+         <div>
+            <ul>
+                <li>How satisfied where you with our service?</li>
+            </ul>
+            <ul>
+                <li> <input type="radio" id="very satisfied" name="satisfied" value="very satisfied" >
+                <label for="very satisfied">Very Satisfied</label></li>
+                <li> <input type="radio" id="satisfied" name="satisfied" value="satisfied" >
+                <label for="satisfied">Satisfied</label></li>
+                <li> <input type="radio" id="didn't care" name="satisfied" value="didn't care" >
+                <label for="didn't care">Didn't care</label></li>
+                <li> <input type="radio" id="dissatisfied" name="satisfied" value="dissatisfied" >
+                <label for="dissatisfied">Dissatisfied</label></li>
+            </ul>
+            <div>
+                <ul><li>Further comments:</li></ul>
+                <textarea placeholder="comments here" rows="2" cols="8" ></textarea>
+            </div>
+            <div>
+                <label for="photo"><ul><li>Bio photo:</li></ul></label>
+                <input type="text" name="photo" id="photo">
+                <input type="file" name="data">
+            </div>
+            <div>
+                <select>
+                    <ul><li>Location visited:</li></ul>
+                    <opption>Select</opption>
+                    <option value="india">India</option>
+                    <option value="usa">United state</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United kingdom</option>
+                    <option value="spain">Spain</option>
+                    <option value="china">china</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit"><ul><li>Submit</li></ul></button>   <button type="reset"><ul><li>Reset data</li></ul></button>
+            </div>
+        </div>
+    </form>
+
+    <table border="1">
+        <caption>Student & its Details:</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th>Students</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll Number</th>
+            </tr>
+            <tr>
+                <th rowspan="4">Student List</th>
+                <th colspan="4"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>Victor</td>
+                <td>Computer Science</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2</td>
+                <td>Williams</td>
+                <td>Electronic</td>
+                <td>23456</td>
+            </tr>
+             <tr>
+
+                <td></td>
+                <td>3</td>
+                <td>Harry</td>
+                <td>Electronic</td>
+                <td>3456</td>
+            </tr>
+             <tr>
+                <td></td>
+                <td>4</td>
+                <td>Rick</td>
+                <td>Civil</td>
+                <td>4567</td>
+            </tr>
+        </tbody>
+    </table>
+</body>  
+</html>  http://127.0.0.1:5500/Advance.html?user=pradeep&email=pradeepsahu29885%40gmail.com&pass=pradeep432&emotion=Angry&satisfied=didn%27t+care&photo=this+is+my+picture&data=p.jpg
