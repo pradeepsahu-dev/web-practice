@@ -1,4 +1,4 @@
-#container{
+/* #container{
     height: 400px;
     width:400px;
     border:2px solid mediumturquoise;
@@ -40,3 +40,77 @@
     line-height:50px ;
 }
 
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: palevioletred;
+    animation:fontAnimation 2s ease-in-out 0s infinite backwards;
+}
+
+@keyframes fontAnimation{
+    from{font-size: 40p;}
+    to{font-size: 60px;}
+}
+ */
+
+ .container{
+    display: grid;
+    grid-gap:10px;
+    grid-template-rows:repeat(12,1fr);
+    grid-template-columns:repeat(12,1fr);
+   
+ }
+ .container div{
+    
+    background-color: plum;
+    font-size: 1.5rem;
+ }
+ .head{
+    grid-column:1/span 12;
+    grid-row: 1/span 1;
+ }
+ .side{
+    grid-row:2/span 10;
+    grid-column:1/span 3;
+ }
+ .nav{
+    grid-row: 2/span 1;
+    grid-column:4/span 6;
+ }
+ .ads{
+    grid-row:2/span 10;
+    grid-column:10/span 3;
+ }
+.main{
+    grid-row:3/span 9;
+    grid-column:4/span 6;
+}
+.foot{
+    grid-row:12/span1;
+    grid-column:1/span 12;
+}
+
+.loader{
+    border:20px solid powderblue;
+    border-top: 20px solid rgb(13, 195, 22);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin-top: 30px;
+    animation: spin 1s ease-in 0s infinite forwards;
+
+}
+@keyframes spin{
+    0%{transform:rotate(0deg) ;
+    background-color: brown;
+    transform: scale(60px ,100px);
+    transform: translate(300px,300px);}
+    50%{transform: rotate(180deg);
+         transform: translate(-10px,-2000px);
+    background-color: chartreuse;}
+    
+    100%{transform: rotate(360deg);
+    background-color: rgb(222, 14, 205);
+     transform: translate(-300px,-300px);
+    transform: scale(10px,100px);}
+}
