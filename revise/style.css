@@ -1,0 +1,10 @@
+h1{
+    font-size: 40px;
+    background-color: aquamarine;
+    display: inline-block;
+    border: 3px solid burlywood;
+    box-shadow:2px 4px 8px rgb(127, 187, 224);
+    text-align: center;
+    position: relative;
+    left: 400px;
+}

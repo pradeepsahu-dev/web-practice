@@ -102,15 +102,10 @@
 }
 @keyframes spin{
     0%{transform:rotate(0deg) ;
-    background-color: brown;
-    transform: scale(60px ,100px);
-    transform: translate(300px,300px);}
-    50%{transform: rotate(180deg);
-         transform: translate(-10px,-2000px);
-    background-color: chartreuse;}
+    background-color: brown;}
+
     
     100%{transform: rotate(360deg);
-    background-color: rgb(222, 14, 205);
-     transform: translate(-300px,-300px);
-    transform: scale(10px,100px);}
+    background-color: rgb(222, 14, 205);}
+    
 }
